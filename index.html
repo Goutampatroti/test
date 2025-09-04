@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goutam-Portfolio-Website</title>
+
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Email Send  -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init("o5jFZMgba0bF6_H9O"); // Replace with your Public Key
+        })();
+    </script>
+
+<script src="script.js"></script>
+</head>
+
+<body>
+
+    <!-- header design -->
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <!-- <a href="#services">Services</a> -->
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="bx bx-moon" id="darkMode-icon"></div>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+
+    <!-- home section design -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, I am</h3>
+            <h1>GoutamPatroti</h1>
+           <p>
+                I'm a Java backend developer and full-stack enthusiast who loves
+                building scalable, efficient applications. <br>
+            </p>
+            <br>
+            <p>
+                Currently, I'm pursuing my Master of Computer Applications (MCA) 
+                at Basaveshwar Engineering College, Bagalkote <br>
+                Alongside my studies, I'm enhancing my skills in backend development, 
+                RESTful APIs, and integrating them with dynamic frontends.
+            </p>
+
+
+            <div class="social-media">
+                <a href="https://github.com/Goutampatroti" target="_blank" rel="noopener noreferrer"><i class='bx bxl-github' target="_blank" rel="noopener noreferrer" ></i></a>
+                <a href="mailto:goutampatroti@gmail.com" target="_blank" rel="noopener noreferrer"><i class='bx bxs-envelope'  ></i></a>
+                <a href="#contact"><i class='bx bxs-message-square-detail'  ></i></a>
+                <a href="https://www.linkedin.com/in/goutam-patroti-a352962ba?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">
+                    <i class='bx bxl-linkedin'></i>
+                  
+                </a>
+            </div>
+        
+                <!-- CV download functionality -->
+            <a href="https://drive.google.com/file/d/1QSSvo8Ed9PWEf5wb-6-v1QSrMPIxNXiW/view?usp=drivesdk" class="btn" download>Download CV</a>
+                <!-- here 1IXDrVfqg9xMhgbBv4uVQGri3QTFZc0IE is file id replace this only in future -->
+                <!-- Isko lene ke liye drive me upload then share->getlink-> copylink and choose access from link then find FILE ID from copied link -->
+        </div>
+
+        <div class="profession-container">
+            <div class="profession-box">
+                <!-- Java Developer -->
+                <div class="profession" style="--i:0;">
+                    <i class='bx bxl-java'></i>
+                    <h3>Java Developer</h3>
+                </div>
+
+                <!-- Backend Developer -->
+                <div class="profession" style="--i:1;">
+                    <i class='bx bx-server'></i>
+                    <h3>Backend Developer</h3>
+                </div>
+
+                <!-- Java Full-Stack -->
+                <div class="profession" style="--i:2;">
+                    <i class='bx bx-layer'></i>
+                    <h3>Java Full-Stack</h3>
+                </div>
+
+                <!-- Spring Framework -->
+                <div class="profession" style="--i:3;">
+                    <i class='bx bx-leaf'></i>
+                    <h3>Spring Framework</h3>
+                </div>
+
+                <div class="circle"></div>
+            </div>
+
+            <div class="overlay"></div>
+        </div>
+
+
+
+        <div class="home-img">
+            <img src="images/home.png" alt="">
+        </div>
+    </section>
+
+    <!-- about section design -->
+    <!-- <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/about.png" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>
+                Hi there, welcome to my website! I'm Vipin,
+                a passionate web developer who enjoys learning new technologies
+                and solving problems with code!
+            </h3>
+            <p>
+                This website is my portfolio where I showcase my 
+                projects and skills in web development.
+            </p>
+            <p>
+                Thank you for visiting my website and getting to know me better. I hope you
+                enjoyed reading my blog posts and
+                found
+                them useful and informative. If you want to read more of my posts, subscribe
+                to my newsletter where I send
+                weekly
+                updates on web development trends and tips. If you have any feedback or
+                suggestions, please let me know. I'd love to hear from you.
+            </p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </section> -->
+
+    <section class="about" id="about">
+    <div class="about-img">
+        <img src="images/about.png" alt="Goutam Patroti">
+    </div>
+
+    <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <h3>Java Developer | Spring Framework | Full‑Stack Enthusiast</h3>
+        <p>
+            Hi there! I'm <b>Goutam Patroti</b>, a passionate developer who loves turning complex ideas into reliable and efficient applications. 
+            I specialize in <b>Java and Spring Framework (Spring Boot)</b> for backend development and enjoy integrating them with modern frontend technologies.
+        </p>
+        <p>
+            My focus is on building <b>REST APIs, robust backend systems</b>, and <b>end‑to‑end full‑stack solutions</b> that solve real-world problems. 
+            I also work with tools like <b>PostgreSQL, Hibernate/JPA</b>, and follow clean architecture principles.
+        </p>
+        <p>
+            When I'm not coding, I love exploring <b>new frameworks and deployment tools</b>, contributing to <b>open‑source projects</b>, and sharing what I learn with the community.
+        </p>
+        <a href="#portfolio" class="btn">View My Work</a>
+    </div>
+</section>
+
+    
+
+    <!-- services section design -->
+
+    <!-- <section class="services" id="services">
+        <h2 class="heading">My <span>Services</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Web Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi itaque similique, architecto
+                    eaque ut quas delectus pariatur nesciunt in eligendi mollitia dicta.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bxs-paint'></i>
+                <h3>Full-Stack Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi itaque similique, architecto
+                    eaque ut quas delectus pariatur nesciunt in eligendi mollitia dicta.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bx-bar-chart-alt'></i>
+                <h3>MERN Stack Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi itaque similique, architecto
+                    eaque ut quas delectus pariatur nesciunt in eligendi mollitia dicta.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- portfolio section design -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Project</span></h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="images/portfolio1.jpg" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>File Sharing Website</h4>
+                    <p>Where users can upload and share files with others through unique code.</p>
+                    <a href="https://sharefile-804.firebaseapp.com" target="_blank" rel="noopener noreferrer" > <i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/portfolio2.jpg" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>E-Commerce Art Website</h4>
+                    <p>Where Users can upload, share, and sell their art to others.</p>
+                    <a href="https://bulbulart.netlify.app" target="_blank" rel="noopener noreferrer" ><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/portfolio3.jpg" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>Insect Game</h4>
+                    <p>Where you can Pick your favorite insect and keep eliminating it in this fun game.</p>
+                    <a href="https://incredible-parfait-b12d1e.netlify.app" target="_blank" rel="noopener noreferrer" ><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/portfolio4.jpg" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>Transaction Management </h4>
+                    <p>You can Track transactions, view total profit, expenses, and balance effortlessly.</p>
+                    <a href="https://fir-crud-7ed98.firebaseapp.com" target="_blank" rel="noopener noreferrer" ><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/portfolio5.png" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>Product Manag-ement System</h4>
+                    <p>Can Manage products, add, delete, and update products with ease.</p>
+                    <a href="https://ecom-java.netlify.app" target="_blank" rel="noopener noreferrer" ><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        
+            <div class="portfolio-box">
+                <img src="images/portfolio6.jpg" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>Lockify</h4>
+                    <p>It will come soon..</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div> 
+        </div>
+    </section>
+
+    <!-- testimonial design -->
+    <!-- <div class="testimonial-container">
+        <h2 class="heading">Valuable <span>Testimonial</span></h2>
+
+        <div class="testimonial-wrapper">
+            <div class="testimonial-box mySwiper">
+                <div class="testimonial-content swiper-wrapper">
+                    <div class="testimonial-slide swiper-slide">
+                        <img src="images/testimonial1.jpg" alt="">
+                        <h3>Jackson Levi</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem dignissimos aliquid
+                            iure delectus corrupti impedit, beatae aperiam ad iusto nostrum possimus cum pariatur harum
+                            assumenda suscipit a, qui, tempora maxime nulla facere quo ipsum tempore. Atque libero
+                            provident ad aut officia pariatur voluptate quaerat delectus nesciunt, sequi eligendi
+                            aperiam fugit unde nihil, iste similique illum. Dignissimos enim officia consequuntur
+                            dolores.</p>
+                    </div>
+                    <div class="testimonial-slide swiper-slide">
+                        <img src="images/testimonial2.jpg" alt="">
+                        <h3>Flora Ocean</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem dignissimos aliquid
+                            iure delectus corrupti impedit, beatae aperiam ad iusto nostrum possimus cum pariatur harum
+                            assumenda suscipit a, qui, tempora maxime nulla facere quo ipsum tempore. Atque libero
+                            provident ad aut officia pariatur voluptate quaerat delectus nesciunt, sequi eligendi
+                            aperiam fugit unde nihil, iste similique illum. Dignissimos enim officia consequuntur
+                            dolores.</p>
+                    </div>
+                    <div class="testimonial-slide swiper-slide">
+                        <img src="images/testimonial3.jpg" alt="">
+                        <h3>Julian Grayson</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem dignissimos aliquid
+                            iure delectus corrupti impedit, beatae aperiam ad iusto nostrum possimus cum pariatur harum
+                            assumenda suscipit a, qui, tempora maxime nulla facere quo ipsum tempore. Atque libero
+                            provident ad aut officia pariatur voluptate quaerat delectus nesciunt, sequi eligendi
+                            aperiam fugit unde nihil, iste similique illum. Dignissimos enim officia consequuntur
+                            dolores.</p>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- contact section design -->
+    
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+        <form  action="https://formsubmit.co/goutampatroti@gmail.com" method="POST">
+              <div class="input-box">
+                <input type="text" name="name"  placeholder="Full Name" required>
+              </div>
+              <div class="input-box">
+                <input type="email" name="email" placeholder="Email Address" required>
+              </div>
+              <div class="input-box">
+                <input type="mobile number" name="number"  placeholder="number" required>
+              </div>
+             
+              <div>
+              <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+              <input type="submit" value="Send Message" class="btn">
+              <input type="hidden" name="_captcha" value="false"></div>
+        </form>
+    </section>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+    <!-- footer design -->
+    <footer class="footer">
+        <div class="footer-text">
+            <!-- <p>Copyright &copy; 2025 | All Rights Reserved.</p> -->
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- custom js -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
